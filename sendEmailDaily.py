@@ -47,9 +47,9 @@ import time
 
 def send_email():
     # Email configuration
-    sender_email = "your_email@example.com"
-    receiver_email = "recipient_email@example.com"
-    password = "your_email_password"
+    sender_email = "arullmozhivarmann@gmail.com"
+    receiver_email = "parthiban.paul@gmail.com"
+    password = "$password"
 
     # Create the email
     msg = MIMEMultipart()
@@ -58,12 +58,12 @@ def send_email():
     msg['Subject'] = "Daily Report"
 
     # Email body
-    body = "This is your daily report."
+    body = "This is your daily report Sent for an python testing."
     msg.attach(MIMEText(body, 'plain'))
 
     # Connect to the server and send the email
     try:
-        server = smtplib.SMTP('smtp.example.com', 587)  # Replace with your SMTP server and port
+        server = smtplib.SMTP('smtp.gmail.com', 587)  # Replace with your SMTP server and port
         server.starttls()
         server.login(sender_email, password)
         text = msg.as_string()
