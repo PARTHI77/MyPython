@@ -80,9 +80,9 @@ def send_email():
 
 def schedule_email():
     # Run every day at 08:00
-    schedule.every().day.at("21:00").do(send_email)
+    schedule.every().day.at("22:06").do(send_email)
 
-    print("Email scheduler started. Waiting for 21:00...")
+    print("Email scheduler started. Waiting for 22:06...")
 
     while True:
         schedule.run_pending()
